@@ -4,12 +4,23 @@
 }
 
 body{
-    background-color: white;
+    background-color: whitesmoke;
 
 }
 
+.cuadro1 {
+    position: relative;
+    top:5px;
+    margin: 0 auto;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
 
-
+}
 
 .box1{
     width: 40vh;
@@ -61,7 +72,7 @@ body{
 
 
 .box2 {
-    width: 200vh;
+    width: 100vh;
     height: 5vh;
     margin: 5px;
     background-color: white;
