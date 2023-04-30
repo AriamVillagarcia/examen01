@@ -1,154 +1,233 @@
-
 *{
     margin: 0;
-    
+
 }
 
 body{
-    background-color: whitesmoke;
+    background-color: #ffffcc;
 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.cuadro1 {
-    position: relative;
-    top:5px;
+
+
+.header {
+    grid-area: header;
+    background-color: #444444;
+    height: 50px;
+    COLOR: #ffff;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: #1d0b0b;
+    COLOR: #ffff;
+    position: absolute;
+    margin-right: -200px;
+    width: 300px;
+    height: 50px;
+}
+
+.articlebar {
+    grid-area: articlebar;
+    background-color: #27F635;
+}
+
+.main2 {
+    grid-area: main2;
+    background-color: #ff6600;
+    position: absolute;
+    top: 50px;
+    width: 300px;
+    height: 57.4rem;
+}
+
+
+
+.footer {
+    grid-area: footer;
+    background-color: #203AE2;
+}
+
+.grid-container {
+    display: grid;
+    gap: 15px;
+    grid-template-areas: "header header header""articlebar articlebar articlebar""main2 main1 main0""footer footer footer";
+}
+
+.grid-container {
+    grid-template-rows: repeat(7, 80px);
+}
+
+
+.icon1 {
+    position: absolute;
+    margin-left: -40px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.Dash {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.Dash1 {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.Dash2 {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.Dash3 {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.Dash4 {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.Dash5 {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.encabezado {
+    background-color: #203AE2;
+    position: absolute;
+    margin-left: 400px;
+    width: 90rem;
+    height: 50px;
+}
+
+
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-40%, -40%);
+    height: 100vh;
     margin: 0 auto;
-    background: whitesmoke;
+    background: #ffffcc;
     display: flex;
     flex-direction: row;
     gap:5px;
     flex-wrap: wrap;
-    justify-content: start;
-    align-items: center;
-
-}
-
-.box1{
-    width: 40vh;
-    height: 80vh;
-
-    margin: 5px;
-    background-color: orange;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
-}
-
-.box{
-    width: 1845px;
-    height: 80px;
-    margin: 5px;
-    background-color: black;
-    display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.7;
-
-    .text{
-        color:white;
-        font: sans-serif;
-        text-align: start;
-
-    }
-}
-.container{
-
-    height: 100vh;
-    flex-direction: row;
-    top:auto;
-    margin: 0 auto;
-    background: whitesmoke;
-    display: flex;
-
-    gap:5px;
-    flex-wrap: wrap;
-
     padding: 2px;
 
+
+
+
+}
+.box1 {
+    width: 1050px;
+    height: 50px;
+    margin: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  border: 1px solid black;
+
 }
 
-.box2 {
-    width: 200vh;
-    height: 5vh;
-    margin: 5px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
+
 .box3 {
-    width: 20vh;
-    height: 10vh;
+    width: 200px;
+    height: 100px;
     margin: 5px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    border: 1px solid black;
+
 }
 .box4{
-    width: 20vh;
-    height: 10vh;
+    width: 200px;
+    height: 100px;
     margin: 5px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 .box5{
-    width: 20vh;
-    height: 10vh;
+    width: 200px;
+    height: 100px;
     margin: 5px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 
 }
 .box6{
-    width: 20vh;
-    height: 10vh;
+    width: 200px;
+    height: 100px;
     margin: 5px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 .box7{
-    width: 40vh;
-    height: 20vh;
+    width: 400px;
+    height: 200px;
     margin: 5px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 .box8{
-    width: 50vh;
-    height: 20vh;
+    width: 500px;
+    height: 200px;
     margin: 5px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 .box9{
-    width: 70vh;
-    height: 20vh;
+    width: 700px;
+    height: 200px;
     margin: 5px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 .box10{
-    width: 20vh;
-    height: 20vh;
+    width: 200px;
+    height: 200px;
     margin: 5px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
